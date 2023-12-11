@@ -1,0 +1,9 @@
+{
+    "name": "NAME",
+    "version": 0,
+    "entry_point": "YOUR_DUNGEON_ID:rooms/ENTRY_ROOM",
+    "events": {
+        "on_enter": {"#script": "YOUR_DUNGEON_ID/scripts/YOUR_DUNGEON_ID/on_enter"},
+        "on_exit": {"#script": "YOUR_DUNGEON_ID/scripts/YOUR_DUNGEON_ID/on_exit"}
+    }
+}

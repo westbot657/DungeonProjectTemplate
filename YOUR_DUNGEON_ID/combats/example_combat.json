@@ -1,0 +1,19 @@
+{
+    "respawn_point": "YOUR_DUNGEON_ID:rooms/ROOM",
+    "data": {
+        "VARIABLE": "VALUE"
+    },
+    "enemies": [
+        "notes on how these work will be made at a later point, until then, you can ask for help on the discord"
+    ],
+    "sequence": {
+        "@start": {
+            "functions": [
+                {
+                    "function": "engine:combat/spawn",
+                    "enemies": []
+                }
+            ]
+        }
+    }
+}

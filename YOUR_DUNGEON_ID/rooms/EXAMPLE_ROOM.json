@@ -1,0 +1,31 @@
+{
+    "name": "NAME",
+    "interactions": [
+        {
+            "type": "engine:interactable/passage",
+            "id": "example_passage",
+            "target": "YOUR_DUNGEON_ID:rooms/TARGET_ROOM",
+            "travel_message": "this message is sent when the player goes through this passage",
+            "blocked": false,
+            "blocked_message": "message is sent when player interacts with a blocked passage"
+        },
+        {
+            "type": "engine:interactable/door",
+            "id": "example_room",
+            "target": "YOUR_DUNGEON_ID:rooms/TARGET_ROOM",
+            "travel_message": "this message is sent when the player goes through this door",
+            "locked": false,
+            "lock_message": "message is sent when the player interacts with the door when it's locked",
+            "open_message": "this message is sent when player interacts with the door and before the player travels through it",
+            "disengage_message": "message is sent when player decides not to go through the door after interacting with it"
+        }
+    ],
+    "events": {
+        "on_enter": {
+            "#script": "YOUR_DUNGEON_ID/scripts/rooms/EXAMPLE_ROOM/on_enter"
+        },
+        "on_input": {
+            "#script": "YOUR_DUNGEON_ID/scripts/rooms/EXAMPLE_ROOM/on_input"
+        }
+    }
+}
